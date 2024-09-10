@@ -148,15 +148,16 @@ export const employees = [
 ] as const;
 
 export const trustedCompanines = [
-  "/images/brands/logo (1).jpg",
-  "/images/brands/logo (9).jpg",
-  "/images/brands/logo (10).jpg",
-  "/images/brands/logo (2).jpg",
-  "/images/brands/logo (3).jpg",
-  "/images/brands/logo (4).jpg",
-  "/images/brands/logo (5).jpg",
-  "/images/brands/logo (6).jpg",
-  "/images/brands/logo (8).jpg",
+  "/images/brands/logo.webp",
+  "/images/brands/logo.webp",
+  "/images/brands/logo.webp",
+  "/images/brands/logo.webp",
+  "/images/brands/logo.webp",
+  "/images/brands/logo.webp",
+  "/images/brands/logo.webp",
+  "/images/brands/logo.webp",
+  "/images/brands/logo.webp",
+  ,
 ] as const;
 
 export const pricingPackages = [
