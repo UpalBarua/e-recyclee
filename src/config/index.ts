@@ -12,13 +12,10 @@ import {
 
 export const navLinks = [
   {
-    label: "Packages",
-    href: "/#packages",
+    label: "About Us",
+    href: "/about-us",
   },
-  {
-    label: "Services",
-    href: "/#services",
-  },
+
   {
     label: "Blog",
     href: "/blog",
@@ -27,10 +24,7 @@ export const navLinks = [
     label: "Contact Us",
     href: "/contact-us",
   },
-  {
-    label: "About Us",
-    href: "/about-us",
-  },
+
   {
     label: "Our Work",
     href: "/our-work",
