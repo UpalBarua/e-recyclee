@@ -4,6 +4,35 @@ import { Card, CardBody, CardHeader } from "@nextui-org/card";
 import { MotionDiv } from "./motion-div";
 import { SectionSubheading } from "./ui/section-subheading";
 
+import { Globe, Trees, PenTool, BarChart } from "lucide-react";
+
+const focus = [
+  {
+    title: "Humanity",
+    description:
+      "We believe in the power of technology to transform lives. By providing refurbished devices to underserved communities, we are empowering individuals to connect, learn, and grow.",
+    icon: Globe,
+  },
+  {
+    title: "Sustainability",
+    description:
+      "Protecting our planet is a top priority. We are committed to responsible e-waste management and reducing our environmental footprint. By recycling and repurposing electronics.",
+    icon: Trees,
+  },
+  {
+    title: "Repurposing",
+    description:
+      "We believe that every device has a second life. By refurbishing and repairing old electronics, we are extending their lifespan and reducing the need for new, resource-intensive products.",
+    icon: PenTool,
+  },
+  {
+    title: "Impact",
+    description:
+      "Our work has a measurable impact on communities and the environment. By providing affordable technology to those in need, we are empowering individuals to achieve their goals and improve their quality of life.",
+    icon: BarChart,
+  },
+] as const;
+
 export function WhyChooseUs() {
   return (
     <section>
@@ -11,8 +40,8 @@ export function WhyChooseUs() {
       <SectionSubheading>
         Explore our customizable packages for your specific needs
       </SectionSubheading>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {whyChooseUsData.map((data, i) => (
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {focus.map((data, i) => (
           <ChooseUsCard key={data.title} i={i} {...data} />
         ))}
       </div>
@@ -20,11 +49,11 @@ export function WhyChooseUs() {
   );
 }
 
-type ChooseUsCardProps = (typeof whyChooseUsData)[number] & { i: number };
+type ChooseUsCardProps = (typeof focus)[number] & { i: number };
 
 function ChooseUsCard({
   icon: Icon,
-  color,
+  // color,
   title,
   description,
   i,
@@ -53,7 +82,10 @@ function ChooseUsCard({
           }}
         >
           <div className="flex aspect-square items-center justify-center rounded-xl border border-foreground/5 bg-content2/65 p-3.5 backdrop-blur-xl backdrop-saturate-200">
-            <Icon style={{ color }} className="size-10" />
+            <Icon
+              // style={{ color }}
+              className="size-10"
+            />
           </div>
         </MotionDiv>
       </CardHeader>
@@ -75,8 +107,8 @@ function ChooseUsCard({
         }}
       >
         <CardBody className="space-y-2">
-          <h3 className="text-2xl font-semibold tracking-tight">{title}</h3>
-          <p className="leading-relaxed text-foreground/80">{description}</p>
+          <h3 className="font-meidum text-3xl tracking-tight">{title}</h3>
+          <p className="leading-relaxed text-foreground/60">{description}</p>
         </CardBody>
       </MotionDiv>
     </Card>

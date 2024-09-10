@@ -1,4 +1,4 @@
-import { socialLinks } from "@/config";
+import { navLinks, socialLinks } from "@/config";
 import { services } from "@/config/services";
 import { Button } from "@nextui-org/button";
 import { Mail, MapPin, PhoneCall } from "lucide-react";
@@ -14,26 +14,23 @@ export function Footer() {
             src="/images/logo.jpg"
             alt="logo"
             height={80}
-            width={160}
-            className="pb-6 pt-8 lg:p-0"
+            width={120}
+            className="mb-2 size-20"
           />
           <p>Copyright © 2024 recyclee.com</p>
           <Link href="/contact-us">
-            <Button
-              size="lg"
-              className="mt-6 bg-[#43ff64] font-medium text-background"
-            >
+            <Button size="lg" color="primary">
               <span>Get In Touch</span>
             </Button>
           </Link>
         </div>
         <div>
-          <h3 className="pb-4 text-2xl font-semibold text-foreground">
-            Services
-          </h3>
+          <h3 className="pb-4 text-2xl font-semibold text-foreground">Links</h3>
           <ul className="flex flex-col gap-y-2">
-            {services.map(({ category }) => (
-              <li key={category}>{category}</li>
+            {navLinks.map(({ label, href }) => (
+              <li key={href}>
+                <Link href={href}>{label}</Link>
+              </li>
             ))}
           </ul>
         </div>

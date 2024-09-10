@@ -2,7 +2,7 @@ import { Footer } from "@/components/footer";
 import { MainNav } from "@/components/navbar/main-nav";
 import { Providers } from "@/components/providers";
 import { cn } from "@/lib/cn";
-import { roboto } from "./fonts";
+import { notoSans } from "./fonts";
 import "./globals.css";
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
     >
       <body
         className={cn(
-          roboto.className,
+          notoSans.className,
           "relative min-h-screen overflow-x-hidden text-foreground/90 antialiased",
         )}
       >

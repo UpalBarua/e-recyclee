@@ -1,6 +1,6 @@
-import { Roboto } from "next/font/google";
+import { Noto_Sans } from "next/font/google";
 
-export const roboto = Roboto({
+export const notoSans = Noto_Sans({
   weight: ["400", "500", "700", "900"],
   subsets: ["latin"],
 });

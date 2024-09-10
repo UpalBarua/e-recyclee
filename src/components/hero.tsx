@@ -6,15 +6,15 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="grid grid-cols-1 items-center justify-items-center pt-[5rem] md:pt-[2.5rem] lg:grid-cols-2">
-      <div className="flex flex-col items-center gap-y-5 text-center lg:items-start lg:text-start">
+    <section className="!col-[1/-1] grid grid-cols-1 items-center justify-items-center lg:grid-cols-2">
+      <div className="flex flex-col items-center gap-y-6 px-6 py-10 text-center sm:px-10 lg:items-start lg:py-0 lg:text-start">
         <MotionDiv
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <span className="rounded-full border border-foreground/10 bg-content1/65 px-4 py-2 font-medium uppercase tracking-wider backdrop-blur-xl backdrop-saturate-200">
-            Growth Hacking 🚀
+          <span className="rounded-full border border-foreground/10 bg-content1/65 px-4 py-2 text-sm font-medium uppercase tracking-wider backdrop-blur-xl backdrop-saturate-200 sm:text-base">
+            Transform E-Waste into Impact 🌲
           </span>
         </MotionDiv>
         <MotionDiv
@@ -22,8 +22,9 @@ export function Hero() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.125 }}
         >
-          <h1 className="text-pretty text-[clamp(2rem,_9vw+1rem,_4rem)] font-extrabold capitalize leading-tight tracking-tight">
-            We craft digital marketing that converts!
+          <h1 className="font-meidum text-pretty text-[clamp(2rem,_6.5vw+0.5rem,_3.5rem)] capitalize leading-tight tracking-tight">
+            Recycle responsibly. Empower communities. Build a sustainable
+            future!
           </h1>
         </MotionDiv>
         <MotionDiv
@@ -32,10 +33,9 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.25 }}
         >
           <p className="max-w-[35rem] text-pretty text-lg leading-relaxed text-foreground-600">
-            We don't just create digital marketing; we engineer it for
-            conversions. Our strategies are designed to attract, engage, and
-            convert your target audience into loyal customers. Let's build a
-            digital powerhouse together.
+            We engineer digital marketing for conversions. Our strategies
+            attract, engage, and convert your target audience into loyal
+            customers. Let's build a digital powerhouse together.
           </p>
         </MotionDiv>
         <MotionDiv
@@ -45,16 +45,20 @@ export function Hero() {
         >
           <div className="flex items-center gap-x-4 pt-4">
             <Link href="/contact-us">
-              <Button color="primary" size="lg">
-                Get Started
+              <Button
+                color="primary"
+                size="lg"
+                className="border border-foreground/10 font-medium"
+              >
+                Donate Now
               </Button>
             </Link>
-            <Link href="/portfolios">
+            <Link href="/">
               <Button
                 className="border border-foreground/10 bg-content1/65 font-medium backdrop-blur-xl backdrop-saturate-200"
                 size="lg"
               >
-                <span>See Our Projects</span>
+                <span>Learn More</span>
                 <ChevronRight />
               </Button>
             </Link>
@@ -65,12 +69,14 @@ export function Hero() {
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.25, delay: 0.25 }}
+        className="w-full"
       >
         <Image
-          src="/images/hero-illustration.svg"
+          src="/images/hero.webp"
           alt="Hero Illustration"
           height="600"
           width="600"
+          className="h-full w-full border-t object-cover object-center lg:max-h-[90vh]"
         />
       </MotionDiv>
     </section>

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ReactNode, useState } from "react";
 import { MobileNav } from "./mobile-nav";
+import { Button } from "@nextui-org/button";
 
 type NavContainerProps = {
   children: ReactNode;
@@ -20,7 +21,7 @@ export function NavContainer({ children }: Readonly<NavContainerProps>) {
       height="3.5rem"
       maxWidth="xl"
       classNames={{
-        base: "bg-content1/65 backdrop-saturate-200 backdrop-blur-xl",
+        base: "bg-content1/65 border-b backdrop-saturate-200 backdrop-blur-xl",
         wrapper: "px-2 sm:px-4 h-[4rem]",
       }}
     >
@@ -36,6 +37,9 @@ export function NavContainer({ children }: Readonly<NavContainerProps>) {
         />
       </Link>
       {children}
+      <Link href="/">
+        <Button color="primary">Donate</Button>
+      </Link>
       <MobileNav isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
     </Navbar>
   );

@@ -7,7 +7,7 @@ import { NavContainer } from "./nav-container";
 export function MainNav() {
   return (
     <NavContainer>
-      <NavbarContent className="hidden gap-3 md:flex" justify="end">
+      <NavbarContent className="hidden gap-2 md:flex" justify="center">
         {navLinks.map(({ label, href }) => (
           <NavbarItem key={href}>
             <Button
