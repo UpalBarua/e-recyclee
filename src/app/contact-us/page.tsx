@@ -2,6 +2,7 @@ import { ContactUsForm } from "@/components/contact-us-form";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { SectionSubheading } from "@/components/ui/section-subheading";
 import { socialLinks } from "@/config";
+import { CalendarClock, Contact, MapPin } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -18,13 +19,43 @@ export default function ContactUs() {
           Contact Us
         </SectionSubheading>
         <SectionHeading className="pl-0 text-start">
-          Reach our Customer service!
+          Reach our People!
         </SectionHeading>
         <p className="leading-relaxed text-foreground-500">
-          We value your connection with us. Our dedicated team is committed to
-          providing exceptional service and prompt communication. Whether you
-          have questions, feedback, or simply want to get to know us better,
-          we’re here for you.Thank you
+          <ul className="mb-6 p-4 md:mb-0">
+            <li className="flex">
+              <div className="flex h-10 w-10 items-center justify-center rounded bg-primary text-white">
+                <MapPin color="white" />
+              </div>
+              <div className="mb-4 ml-4">
+                <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">
+                  Our Address
+                </h3>
+                <p className="text-gray-600 dark:text-slate-400">
+                  1230 Maecenas Street Donec Road
+                </p>
+                <p className="text-gray-600 dark:text-slate-400">
+                  New York, EEUU
+                </p>
+              </div>
+            </li>
+            <li className="flex">
+              <div className="flex h-10 w-10 items-center justify-center rounded bg-primary text-white">
+                <Contact color="white" />
+              </div>
+              <div className="mb-4 ml-4">
+                <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">
+                  Contact
+                </h3>
+                <p className="text-gray-600 dark:text-slate-400">
+                  Mobile: +1 (123) 456-7890
+                </p>
+                <p className="text-gray-600 dark:text-slate-400">
+                  Mail: tailnext@gmail.com
+                </p>
+              </div>
+            </li>
+          </ul>
         </p>
         <div className="flex items-center gap-x-4 pt-8">
           {socialLinks.map(({ link, Icon }) => (
