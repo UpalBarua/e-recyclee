@@ -36,9 +36,9 @@ const focus = [
 export function WhyChooseUs() {
   return (
     <section>
-      <SectionHeading>What Sets Us Apart</SectionHeading>
+      <SectionHeading> How Contributions Empower Change</SectionHeading>
       <SectionSubheading>
-        Explore our customizable packages for your specific needs
+        Be Part of a Movement That Transforms Lives and Creates Lasting Change
       </SectionSubheading>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {focus.map((data, i) => (

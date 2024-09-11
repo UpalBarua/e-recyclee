@@ -51,16 +51,7 @@ export function Hero() {
                 size="lg"
                 className="border border-foreground/10 font-medium"
               >
-                Donate Now
-              </Button>
-            </Link>
-            <Link href="/">
-              <Button
-                className="border border-foreground/10 bg-content1/65 font-medium backdrop-blur-xl backdrop-saturate-200"
-                size="lg"
-              >
-                <span>Learn More</span>
-                <ChevronRight />
+                Learn More
               </Button>
             </Link>
           </div>
