@@ -33,9 +33,10 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.25 }}
         >
           <p className="max-w-[35rem] text-pretty text-lg leading-relaxed text-foreground-600">
-            We engineer digital marketing for conversions. Our strategies
-            attract, engage, and convert your target audience into loyal
-            customers. Let's build a digital powerhouse together.
+            we are dedicated to making a difference in the world through
+            impactful philanthropy. Our mission is to connect generous donors
+            with meaningful causes, creating a ripple effect of positive change
+            in communities around the globe.
           </p>
         </MotionDiv>
         <MotionDiv

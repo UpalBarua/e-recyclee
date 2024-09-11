@@ -13,13 +13,14 @@ export async function TrustedCompanies() {
     <section className="container grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
       <div className="order-last flex flex-col items-start lg:order-first">
         <SectionHeading className="pl-0 text-start">
-          Collaborating with Top Industry Experts
+          Collaborating with Partner
         </SectionHeading>
         <SectionSubheading className="mx-0 max-w-[30rem] px-0 pb-8 text-start">
-          Our agency is a nexus for premier partnerships, trusted by over a
-          hundred leading brands to create impactful and innovative
-          collaborations. Experience the synergy of creativity and strategy in
-          our portfolio of successful projects.
+          Recycle is renowned for its brief description of their strengths or
+          achievements, e.g., cutting-edge technology, outstanding customer
+          service, industry-leading solutions. Their expertise and dedication
+          complement our own goals, and together, we strive to set new
+          benchmarks in specific area of collaboration.
         </SectionSubheading>
         <MotionDiv
           initial={{
