@@ -37,9 +37,9 @@ export function NavContainer({ children }: Readonly<NavContainerProps>) {
         />
       </Link>
       {children}
-      <Link href="/">
+      {/* <Link href="/">
         <Button color="primary">Donate</Button>
-      </Link>
+      </Link> */}
       <MobileNav isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
     </Navbar>
   );

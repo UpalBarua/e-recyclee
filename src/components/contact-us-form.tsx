@@ -20,7 +20,7 @@ const contactUsFormSchema = z.object({
       message: "Name must only include alphanumeric characters.",
     }),
   email: z.string().trim().email(),
-  phone: z.string(),
+  subject: z.string(),
   message: z
     .string()
     .trim()
@@ -38,19 +38,24 @@ export function ContactUsForm() {
     defaultValues: {
       name: "",
       email: "",
-      phone: "",
+      subject: "",
       message: "",
     },
   });
 
-  const onSubmit = async ({ name, email, phone, message }: TContactUsForm) => {
+  const onSubmit = async ({
+    name,
+    email,
+    subject,
+    message,
+  }: TContactUsForm) => {
     try {
       setIsSubmitting(true);
 
       const newMessage = {
         name,
         email,
-        phone,
+        subject,
         message,
       };
 
@@ -113,12 +118,12 @@ export function ContactUsForm() {
           )}
         />
         <Controller
-          name="phone"
+          name="subject"
           control={control}
           render={({ field, fieldState }) => (
             <Input
               size="lg"
-              label="Phone"
+              label="subject"
               placeholder="Enter your phone no"
               errorMessage={fieldState.error?.message || ""}
               isInvalid={fieldState.invalid}
