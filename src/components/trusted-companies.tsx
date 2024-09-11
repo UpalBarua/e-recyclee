@@ -73,7 +73,7 @@ export async function TrustedCompanies() {
           >
             <div className="flex place-content-center rounded-xl border border-foreground/5 bg-content1/65 p-6 backdrop-blur-xl backdrop-saturate-200">
               <Image
-                src={company}
+                src={company as string}
                 alt="trusted company"
                 height={80}
                 width={200}
