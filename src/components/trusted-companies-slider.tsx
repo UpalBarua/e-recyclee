@@ -16,7 +16,7 @@ export function TrustedCompaniesSlider() {
             {trustedCompanines?.map((company) => (
               <div key={company} className="mx-6">
                 <Image
-                  src={company}
+                  src={company as string}
                   alt="trusted company"
                   height={100}
                   width={120}
@@ -28,9 +28,9 @@ export function TrustedCompaniesSlider() {
           </div>
           <div className="absolute top-0 flex animate-marquee2 items-center justify-center gap-x-4 whitespace-nowrap">
             {trustedCompanines?.map((company, i) => (
-              <div key={company + i} className="mx-6">
+              <div key={(company as string) + i} className="mx-6">
                 <Image
-                  src={company}
+                  src={company as string}
                   alt="trusted company"
                   height={100}
                   width={120}
