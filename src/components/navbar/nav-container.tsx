@@ -27,7 +27,7 @@ export function NavContainer({ children }: Readonly<NavContainerProps>) {
     >
       <Link href="/" onClick={() => setIsMenuOpen(false)}>
         <Image
-          src="/images/logo.jpg"
+          src="/images/logo.png"
           alt="logo"
           height={60}
           width={120}
