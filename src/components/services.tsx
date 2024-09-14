@@ -21,7 +21,7 @@ export function Services() {
           className="w-full"
         >
           <Image
-            src="/images/hero.webp"
+            src="/images/recyclee (5).jpg"
             alt="Hero Illustration"
             height="600"
             width="600"
@@ -44,7 +44,7 @@ export function Services() {
             transition={{ duration: 0.5, delay: 0.125 }}
           >
             <h1 className="font-meidum text-pretty text-[clamp(2rem,_6.5vw+0.5rem,_2.75rem)] capitalize leading-tight tracking-tight">
-              Leading the industry in intelligent waste management
+              Pioneering Smart Solutions in Waste Management
             </h1>
           </MotionDiv>
           <div className="flex items-center gap-x-4">
@@ -79,7 +79,7 @@ export function Services() {
               </CardHeader>
               <CardBody className="space-y-2">
                 <h3 className="font-meidum text-2xl tracking-tight">
-                  Upcycling gadgets
+                  Reviving Gadgets
                 </h3>
                 <p className="leading-relaxed text-foreground/60">
                   We give your old electronics a new lease on life.

@@ -14,10 +14,12 @@ export function MissionVision() {
         </CardHeader>
         <CardBody>
           <p className="text-relaxed">
-            Founded on the belief in sustainability and community empowerment,
-            our journey extends beyond being a venture. Our story is marked by
-            tangible milestones that showcase the real impact of our hard work.
-            Empowering over 7,000 individuals in Africa and North America.
+            Our mission is to transform e-waste into an opportunity for positive
+            change. By giving discarded electronics a second life, we aim to
+            reduce environmental harm and contribute to a more sustainable
+            future. We believe that every gadget has the potential to serve
+            beyond its initial purpose, and by repurposing them, we help
+            decrease the growing global e-waste crisis.
           </p>
         </CardBody>
       </Card>
@@ -31,19 +33,20 @@ export function MissionVision() {
         </CardHeader>
         <CardBody>
           <p className="text-relaxed">
-            Founded on the belief in sustainability and community empowerment,
-            our journey extends beyond being a venture. Our story is marked by
-            tangible milestones that showcase the real impact of our hard work.
-            Empowering over 7,000 individuals in Africa and North America.
+            Our vision is to create a world where technology and sustainability
+            coexist harmoniously. We envision a future where e-waste is no
+            longer a growing problem but a valuable resource that fuels
+            innovation and positive environmental impact. By promoting the reuse
+            and recycling of electronic devices.
           </p>
         </CardBody>
       </Card>
       <Image
-        src="/images/hero.webp"
+        src="/images/recyclee (8).jpg"
         alt="Hero Illustration"
         height="600"
         width="600"
-        className="row-[1/3] max-h-[26rem] w-full rounded-xl border-t object-cover object-center"
+        className="row-[1/3] max-h-[26rem] w-full rounded-xl object-cover object-center"
       />
     </section>
   );
