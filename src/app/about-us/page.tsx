@@ -64,22 +64,21 @@ const AboutUs = () => {
             <section className="m-4 dark:bg-gray-100 dark:text-gray-800 md:m-8">
               <div className="container mx-auto my-6 space-y-1 p-4 text-center">
                 <h2 className="pb-3 text-3xl font-bold md:text-4xl">
-                  Create a stylish website in minutes
+                  The Transformative Impact of Generous Donations
                 </h2>
                 <p>
-                  Get a jumpstart to creating your new webpage! With our fully
-                  responsive and carefully styled components you can get the
-                  structure of your website done with just a couple of clicks.
+                  Exploring How Contributions Drive Relief, Promote
+                  Sustainability, and Build Stronger Communities
                 </p>
               </div>
               <div className="container mx-auto grid justify-center gap-4 lg:grid-cols-2 xl:grid-cols-3">
                 <div className="flex flex-col px-8 py-6">
                   <h2 className="title-font mb-2 text-lg font-semibold dark:text-gray-800 sm:text-xl">
-                    Components
+                    Relief
                   </h2>
                   <p className="mb-4 flex-1 text-base leading-relaxed dark:text-gray-600">
-                    Individual components that can be re-used multiple times in
-                    your designs.
+                    Donations provide crucial support and assistance to those in
+                    need, enhancing their well-being.
                   </p>
                   <a
                     className="inline-flex items-center space-x-2 text-sm dark:text-violet-600"
@@ -88,20 +87,20 @@ const AboutUs = () => {
                 </div>
                 <div className="flex flex-col px-8 py-6 lg:border-none xl:border-solid">
                   <h2 className="title-font mb-2 text-lg font-semibold dark:text-gray-800 sm:text-xl">
-                    Sections
+                    Sustainability
                   </h2>
                   <p className="mb-4 flex-1 text-base leading-relaxed dark:text-gray-600">
-                    Pre-made building blocks that you can stack on top of each
-                    other like Legos to build a website of your own in minutes.
+                    Donations help reduce waste and promote recycling,
+                    contributing to a more eco-friendly future.
                   </p>
                 </div>
                 <div className="flex flex-col px-8 py-6">
                   <h2 className="title-font mb-2 text-lg font-semibold dark:text-gray-800 sm:text-xl">
-                    Templates
+                    Unity
                   </h2>
                   <p className="mb-4 flex-1 text-base leading-relaxed dark:text-gray-600">
-                    Full pages that showcase pieces of what you can achieve with
-                    the building blocks that are in this UI kit.
+                    Donations strengthen community bonds by encouraging
+                    collective action and mutual support.
                   </p>
                   <a
                     className="inline-flex items-center space-x-2 text-sm dark:text-violet-600"
@@ -144,22 +143,22 @@ const AboutUs = () => {
       <div className="mx-auto max-w-7xl">
         <div className="mt-14 flex flex-col items-center gap-4 p-4 lg:flex-row">
           <div className="border-l-2 px-6 py-10 shadow-xl shadow-[#67a1d1]">
-            <h1 className="pb-4 text-2xl font-bold">Our Goal</h1>
+            <h1 className="pb-4 text-2xl font-bold">Our Mission</h1>
             <p>
-              Our goal is to deliver exceptional solutions tailored to your
-              needs, ensuring success through innovation and dedicated support.
-              We are committed to understanding your unique challenges and
-              exceeding your expectations, driving growth and long-term success
-              for your business.
+              Our mission is to transform e-waste into an opportunity for
+              positive change. By giving discarded electronics a second life, we
+              aim to reduce environmental harm and contribute to a more
+              sustainable future. We believe that every gadget has the potential
+              to serve beyond its initial purpose.
             </p>
           </div>
           <div className="border-l-2 px-6 py-10 shadow-xl shadow-[#67a1d1]">
-            <h1 className="pb-4 text-2xl font-bold">Our Mission</h1>
+            <h1 className="pb-4 text-2xl font-bold">Our Vision</h1>
             <p>
-              Our mission is to empower your business with innovative, tailored
-              IT solutions that drive efficiency and growth. We are dedicated to
-              providing exceptional service and support, ensuring your success
-              through every challenge and opportunity.
+              Our vision is to create a world where technology and
+              sustainability coexist harmoniously. We envision a future where
+              e-waste is no longer a growing problem but a valuable resource
+              that fuels innovation and positive environmental impact. .
             </p>
           </div>
         </div>

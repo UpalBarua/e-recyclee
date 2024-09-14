@@ -29,11 +29,11 @@ export function AboutUs() {
         className="relative w-full"
       >
         <Image
-          src="/images/hero.webp"
+          src="/images/about.jpg"
           alt="Hero Illustration"
           height="600"
           width="600"
-          className="h-full w-full rounded-xl border-t object-cover object-center lg:max-h-[90vh]"
+          className="h-full w-full rounded-xl object-cover object-center lg:max-h-[90vh]"
         />
         <ul className="absolute -left-10 bottom-10 m-2 grid grid-cols-3 gap-8 rounded-xl bg-primary p-6">
           {stats.map(({ label, stat }) => (

@@ -27,11 +27,11 @@ export function Impact() {
           className="col-[1/3] w-full"
         >
           <Image
-            src="/images/hero.webp"
+            src="/images/recyclee (14).jpg"
             alt="Hero Illustration"
             height="600"
             width="600"
-            className="h-full min-w-[60vw] rounded-xl border-t object-cover object-center lg:max-h-[90vh]"
+            className="h-full min-w-[60vw] rounded-xl object-cover object-center lg:max-h-[90vh]"
           />
         </MotionDiv>
         <Card
@@ -46,7 +46,7 @@ export function Impact() {
               transition={{ duration: 0.5, delay: 0.125 }}
             >
               <h1 className="font-meidum text-pretty text-[clamp(2rem,_6.5vw+0.5rem,_2.75rem)] capitalize leading-tight tracking-tight">
-                Partnership with Passback
+                Collaborating with Passback
               </h1>
             </MotionDiv>
             <MotionDiv
@@ -55,9 +55,9 @@ export function Impact() {
               transition={{ duration: 0.5, delay: 0.25 }}
             >
               <p className="max-w-[35rem] text-pretty text-lg leading-relaxed text-foreground-600">
-                We were at Wahab Folawiyo School, Lagos, Nigeria. JustUsedTech,
-                in Collaboration with @passbackofficial, emphasized the
-                importance of reuse and circular economy principles.
+                We were at Wahab Folawiyo School, Lagos, Nigeria. e-recyclee, in
+                Collaboration with @passbackofficial, emphasized the importance
+                of reuse and circular economy principles.
               </p>
               <ul className="grid grid-cols-3 gap-8 pt-4">
                 {stats.map(({ label, stat }) => (
@@ -86,7 +86,7 @@ export function Impact() {
           </div>
         </Card>
       </div>
-      <div className="relative grid grid-cols-1 items-center lg:grid-cols-3">
+      {/* <div className="relative grid grid-cols-1 items-center lg:grid-cols-3">
         <MotionDiv
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -152,7 +152,7 @@ export function Impact() {
             </MotionDiv>
           </div>
         </Card>
-      </div>
+      </div> */}
     </section>
   );
 }
