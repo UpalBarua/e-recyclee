@@ -1,55 +1,28 @@
+import { MotionDiv } from "@/components/motion-div";
 import { trustedCompanines } from "@/config";
 import { Button } from "@nextui-org/button";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { MotionDiv } from "@/components/motion-div";
-import { SectionHeading } from "./ui/section-heading";
-import { SectionSubheading } from "./ui/section-subheading";
 import { TrustedCompaniesSlider } from "./trusted-companies-slider";
 
 export async function TrustedCompanies() {
   return (
     <section className="container grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
-      <div className="order-last flex flex-col items-start lg:order-first">
-        <SectionHeading className="pl-0 text-start">
+      <div className="order-last flex flex-col items-start gap-4 lg:order-first">
+        <h2 className="font-meidum text-2xl capitalize md:text-3xl">
           Collaborating with Partner
-        </SectionHeading>
-        <SectionSubheading className="mx-0 max-w-[30rem] px-0 pb-8 text-start">
+        </h2>
+        <p className="leading-relaxed text-foreground/60">
           Recycle is renowned for its brief description of their strengths or
           achievements, e.g., cutting-edge technology, outstanding customer
-          service, industry-leading solutions. Their expertise and dedication
-          complement our own goals, and together, we strive to set new
-          benchmarks in specific area of collaboration.
-        </SectionSubheading>
-        <MotionDiv
-          initial={{
-            y: 100,
-            opacity: 0,
-          }}
-          whileInView={{
-            y: 0,
-            opacity: 1,
-          }}
-          transition={{
-            duration: 0.5,
-            delay: 0.75,
-          }}
-          viewport={{
-            once: true,
-          }}
-        >
-          <Link href="/contact-us">
-            <Button
-              className="font-medium"
-              color="primary"
-              endContent={<ChevronRight />}
-              size="lg"
-            >
-              <span>Lets Connect</span>
-            </Button>
-          </Link>
-        </MotionDiv>
+          service, industry-leading solutions.
+        </p>
+        <Link href="/contact-us">
+          <Button color="primary" endContent={<ChevronRight />}>
+            <span>Lets Connect</span>
+          </Button>
+        </Link>
       </div>
       <div className="hidden grid-cols-3 gap-8 px-2 lg:grid lg:gap-4 lg:px-0">
         {trustedCompanines?.map((company, i) => (

@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ReactNode, useState } from "react";
 import { MobileNav } from "./mobile-nav";
-import { Button } from "@nextui-org/button";
 
 type NavContainerProps = {
   children: ReactNode;

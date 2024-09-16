@@ -11,7 +11,7 @@ export function Blog() {
       <h1 className="font-meidum text-pretty pb-10 text-[clamp(2rem,_6.5vw+0.5rem,_3.5rem)] capitalize leading-tight tracking-tight">
         Latest Blog & News
       </h1>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         {Array(3)
           .fill("")
           .map((_, i) => (
@@ -34,7 +34,7 @@ export function Blog() {
                   {/* <span>{format(new Date(date), "dd LLL y")}</span> */}
                   <span>August 22, 2024</span>
                 </div>
-                <h3 className="text-2xl font-medium text-foreground">
+                <h3 className="text-xl font-medium text-foreground">
                   Why Sustainable Tech Matters: The JustUsed Tech Approach
                 </h3>
                 <p className="max-w-prose text-pretty leading-relaxed text-foreground/80">
