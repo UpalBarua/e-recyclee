@@ -24,7 +24,7 @@ export async function TrustedCompanies() {
           </Button>
         </Link>
       </div>
-      <div className="hidden grid-cols-3 gap-8 px-2 lg:grid lg:gap-4 lg:px-0">
+      <div className="hidden grid-cols-2 gap-8 px-2 lg:grid lg:gap-4 lg:px-0">
         {trustedCompanines?.map((company, i) => (
           <MotionDiv
             initial={{

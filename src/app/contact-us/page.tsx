@@ -1,76 +1,66 @@
-import { ContactUsForm } from "@/components/contact-us-form";
-import { SectionHeading } from "@/components/ui/section-heading";
-import { SectionSubheading } from "@/components/ui/section-subheading";
-import { socialLinks } from "@/config";
-import { CalendarClock, Contact, MapPin } from "lucide-react";
-import type { Metadata } from "next";
+import React from "react";
+import { Input, Textarea } from "@nextui-org/input";
+import { ContactForm } from "@/components/ui/contactForm";
 
-export const metadata: Metadata = {
-  title: "Contact Us | degikon",
-  description:
-    "Need digital help? Contact degikon! All digital services, all questions answered.",
-};
-
-export default function ContactUs() {
+const ContactUs = () => {
   return (
-    <main className="container relative z-10 mx-auto grid max-w-5xl grid-cols-1 gap-10 px-4 pt-[max(5dvw,1.5rem)] md:grid-cols-2 md:gap-28">
-      <div>
-        <SectionSubheading className="mx-0 px-0 pb-2 text-start">
-          Contact Us
-        </SectionSubheading>
-        <SectionHeading className="pl-0 text-start">
-          Reach our People!
-        </SectionHeading>
-        <p className="leading-relaxed text-foreground-500">
-          <ul className="mb-6 p-4 md:mb-0">
-            <li className="flex">
-              <div className="flex h-10 w-10 items-center justify-center rounded bg-primary text-white">
-                <MapPin color="white" />
-              </div>
-              <div className="mb-4 ml-4">
-                <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">
-                  Our Address
-                </h3>
-                <p className="text-gray-600 dark:text-slate-400">
-                  1230 Maecenas Street Donec Road
-                </p>
-                <p className="text-gray-600 dark:text-slate-400">
-                  New York, EEUU
-                </p>
-              </div>
-            </li>
-            <li className="flex">
-              <div className="flex h-10 w-10 items-center justify-center rounded bg-primary text-white">
-                <Contact color="white" />
-              </div>
-              <div className="mb-4 ml-4">
-                <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">
-                  Contact
-                </h3>
-                <p className="text-gray-600 dark:text-slate-400">
-                  Mobile: +1 (123) 456-7890
-                </p>
-                <p className="text-gray-600 dark:text-slate-400">
-                  Mail: tailnext@gmail.com
-                </p>
-              </div>
-            </li>
-          </ul>
-        </p>
-        <div className="flex items-center gap-x-4 pt-8">
-          {socialLinks.map(({ link, Icon }) => (
-            <a
-              href={link}
-              key={link}
-              target="_blank"
-              className="cursor-pointer rounded-full border border-foreground/10 bg-background/80 p-3 text-foreground/60 transition-colors hover:bg-primary hover:text-background"
-            >
-              <Icon size={26} />
-            </a>
-          ))}
+    <section className="mt-6">
+      <div className="py-6 dark:bg-gray-100">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 px-6 md:grid-cols-2 md:divide-x lg:px-8">
+          <div className="py-6 md:px-6 md:py-0">
+            <h1 className="pb-2 text-4xl font-bold">Get In Touch!</h1>
+            <p className="pb-4 pt-2">
+              Have a question, or want to learn more about how you can make a
+              difference with e-recyclee? We’d love to hear from you! Whether
+              you’re ready to donate, need more information about our recycling
+              process, or simply want to connect, our team is here to help.
+            </p>
+            <div className="space-y-4">
+              <p className="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="mr-2 h-5 w-5 sm:mr-6"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+                <span> 16520 North Road Bothell WA 98012</span>
+              </p>
+              <p className="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="mr-2 h-5 w-5 sm:mr-6"
+                >
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                </svg>
+                <span>425 343-9441</span>
+              </p>
+              <p className="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="mr-2 h-5 w-5 sm:mr-6"
+                >
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                </svg>
+                <span>contact@erecyclee.com</span>
+              </p>
+            </div>
+          </div>
+          <ContactForm />
         </div>
       </div>
-      <ContactUsForm />
-    </main>
+    </section>
   );
-}
+};
+
+export default ContactUs;

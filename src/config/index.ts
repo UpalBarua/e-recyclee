@@ -25,13 +25,12 @@ export const navLinks = [
     href: "/blog",
   },
   {
-    label: "Contact Us",
+    label: "Contact",
     href: "/contact-us",
   },
-
   {
-    label: "Our Work",
-    href: "/our-work",
+    label: "Donate Device",
+    href: "/donation-device",
   },
 ] as const;
 
@@ -146,16 +145,10 @@ export const employees = [
 ] as const;
 
 export const trustedCompanines = [
-  "/images/brands/logo.webp",
-  "/images/brands/logo.webp",
-  "/images/brands/logo.webp",
-  "/images/brands/logo.webp",
-  "/images/brands/logo.webp",
-  "/images/brands/logo.webp",
-  "/images/brands/logo.webp",
-  "/images/brands/logo.webp",
-  "/images/brands/logo.webp",
-  ,
+  "/images/first.png",
+  "/images/logo (2).png",
+  "/images/logo (3).png",
+  "/images/logo (4).png",
 ] as const;
 
 export const pricingPackages = [

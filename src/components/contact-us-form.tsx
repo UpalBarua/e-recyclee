@@ -20,7 +20,12 @@ const contactUsFormSchema = z.object({
       message: "Name must only include alphanumeric characters.",
     }),
   email: z.string().trim().email(),
-  subject: z.string(),
+  phone: z.string(),
+  donate: z.string(),
+  code: z.string(),
+  model: z.string(),
+  device: z.string(),
+  brand: z.string(),
   message: z
     .string()
     .trim()
@@ -38,7 +43,12 @@ export function ContactUsForm() {
     defaultValues: {
       name: "",
       email: "",
-      subject: "",
+      phone: "",
+      donate: "",
+      code: "",
+      model: "",
+      device: "",
+      brand: "",
       message: "",
     },
   });
@@ -46,7 +56,12 @@ export function ContactUsForm() {
   const onSubmit = async ({
     name,
     email,
-    subject,
+    phone,
+    donate,
+    code,
+    model,
+    device,
+    brand,
     message,
   }: TContactUsForm) => {
     try {
@@ -55,16 +70,22 @@ export function ContactUsForm() {
       const newMessage = {
         name,
         email,
-        subject,
+        phone,
+        donate,
+        code,
+        model,
+        device,
+        brand,
         message,
       };
+      console.log(newMessage);
 
-      await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
-        newMessage,
-        process.env.NEXT_PUBLIC_EMAILJS_USER_ID as string,
-      );
+      // await emailjs.send(
+      //   process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+      //   process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
+      //   newMessage,
+      //   process.env.NEXT_PUBLIC_EMAILJS_USER_ID as string,
+      // );
 
       reset();
       toast.success("Sent.");
@@ -98,14 +119,113 @@ export function ContactUsForm() {
             />
           )}
         />
+        <div className="flex flex-col gap-2 lg:flex-row">
+          <Controller
+            name="email"
+            control={control}
+            render={({ field, fieldState }) => (
+              <Input
+                size="lg"
+                label="Email"
+                placeholder="Enter your email"
+                errorMessage={fieldState.error?.message || ""}
+                isInvalid={fieldState.invalid}
+                {...field}
+                classNames={{
+                  label: "text-base font-semibold",
+                  inputWrapper:
+                    "bg-content1/65 backdrop-saturate-200 backdrop-blur-xl border border-foreground/10 data-[hover=true]:bg-content1/75 group-data-[focus=true]:bg-content1/75",
+                }}
+              />
+            )}
+          />
+          <Controller
+            name="phone"
+            control={control}
+            render={({ field, fieldState }) => (
+              <Input
+                size="lg"
+                label="phone"
+                placeholder="Enter your phone no"
+                errorMessage={fieldState.error?.message || ""}
+                isInvalid={fieldState.invalid}
+                {...field}
+                classNames={{
+                  label: "text-base font-semibold",
+                  inputWrapper:
+                    "bg-content1/65 backdrop-saturate-200 backdrop-blur-xl border border-foreground/10 data-[hover=true]:bg-content1/75 group-data-[focus=true]:bg-content1/75",
+                }}
+              />
+            )}
+          />
+        </div>
         <Controller
-          name="email"
+          name="donate"
           control={control}
           render={({ field, fieldState }) => (
             <Input
               size="lg"
-              label="Email"
-              placeholder="Enter your email"
+              label="donate"
+              placeholder="Enter your donate amount"
+              errorMessage={fieldState.error?.message || ""}
+              isInvalid={fieldState.invalid}
+              {...field}
+              classNames={{
+                label: "text-base font-semibold",
+                inputWrapper:
+                  "bg-content1/65 backdrop-saturate-200 backdrop-blur-xl border border-foreground/10 data-[hover=true]:bg-content1/75 group-data-[focus=true]:bg-content1/75",
+              }}
+            />
+          )}
+        />
+        <div className="flex flex-col gap-2 lg:flex-row">
+          <Controller
+            name="code"
+            control={control}
+            render={({ field, fieldState }) => (
+              <Input
+                size="lg"
+                label="code"
+                placeholder="Enter your code no"
+                errorMessage={fieldState.error?.message || ""}
+                isInvalid={fieldState.invalid}
+                {...field}
+                classNames={{
+                  label: "text-base font-semibold",
+                  inputWrapper:
+                    "bg-content1/65 backdrop-saturate-200 backdrop-blur-xl border border-foreground/10 data-[hover=true]:bg-content1/75 group-data-[focus=true]:bg-content1/75",
+                }}
+              />
+            )}
+          />
+          <Controller
+            name="model"
+            control={control}
+            render={({ field, fieldState }) => (
+              <Input
+                size="lg"
+                label="model"
+                placeholder="Enter your model "
+                errorMessage={fieldState.error?.message || ""}
+                isInvalid={fieldState.invalid}
+                {...field}
+                classNames={{
+                  label: "text-base font-semibold",
+                  inputWrapper:
+                    "bg-content1/65 backdrop-saturate-200 backdrop-blur-xl border border-foreground/10 data-[hover=true]:bg-content1/75 group-data-[focus=true]:bg-content1/75",
+                }}
+              />
+            )}
+          />
+        </div>
+        <Controller
+          name="device"
+          control={control}
+          render={({ field, fieldState }) => (
+            <Input
+              size="lg"
+              label="device"
+              placeholder="Enter your device "
               errorMessage={fieldState.error?.message || ""}
               isInvalid={fieldState.invalid}
               {...field}
@@ -118,13 +238,13 @@ export function ContactUsForm() {
           )}
         />
         <Controller
-          name="subject"
+          name="brand"
           control={control}
           render={({ field, fieldState }) => (
             <Input
               size="lg"
-              label="subject"
-              placeholder="Enter your phone no"
+              label="brand"
+              placeholder="Enter your brand"
               errorMessage={fieldState.error?.message || ""}
               isInvalid={fieldState.invalid}
               {...field}

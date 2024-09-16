@@ -4,16 +4,33 @@ import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
+
+const stats = [
+  {
+    label: "Laptops Donated",
+    stat: 20,
+  },
+  {
+    label: "Countries Impacted",
+    stat: 2,
+  },
+  {
+    label: "New Partners",
+    stat: 2,
+  },
+] as const;
+
+
 export function AboutUs() {
   return (
     <section className="grid grid-cols-1 items-center justify-items-start lg:grid-cols-2 lg:gap-14">
       <div className="relative w-full">
         <Image
-          src="/images/hero.webp"
+          src="/images/about.jpg"
           alt="Hero Illustration"
           height="600"
           width="600"
-          className="h-full w-full rounded-xl border-t object-cover object-center lg:max-h-[90vh]"
+          className="h-full w-full rounded-xl object-cover object-center lg:max-h-[90vh]"
         />
         <ul className="-right-10 bottom-10 mt-2 grid w-full grid-cols-1 gap-10 rounded-xl bg-primary p-8 sm:grid-cols-3 lg:absolute lg:m-2 lg:gap-8">
           {stats.map(({ label, stat }) => (
