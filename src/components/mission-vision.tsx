@@ -42,7 +42,7 @@ export function MissionVision() {
         </CardBody>
       </Card>
       <Image
-        src="/images/recyclee (8).jpg"
+        src="/images/mission (2).jpg"
         alt="Hero Illustration"
         height="600"
         width="600"

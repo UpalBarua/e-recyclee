@@ -41,7 +41,7 @@ export function Footer() {
           <ul className="space-y-2">
             <li className="flex items-center gap-x-2.5">
               <PhoneCall className="h-5 w-5" />
-              <span>+157675750</span>
+              <span>425 343-9441</span>
             </li>
             <li className="flex items-center gap-x-2.5">
               <Mail className="h-5 w-5" />
@@ -55,7 +55,7 @@ export function Footer() {
           </h1>
           <ul className="flex items-center gap-x-2.5">
             <MapPin className="h-5 w-5" />
-            <address>your address </address>
+            <address>16520 North Road Bothell WA 98012 </address>
           </ul>
         </div>
       </div>

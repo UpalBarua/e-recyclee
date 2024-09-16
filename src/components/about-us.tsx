@@ -7,15 +7,15 @@ import Link from "next/link";
 const stats = [
   {
     label: "Laptops Donated",
-    stat: 1000,
+    stat: 20,
   },
   {
     label: "Countries Impacted",
-    stat: 4,
+    stat: 2,
   },
   {
     label: "New Partners",
-    stat: 10,
+    stat: 2,
   },
 ] as const;
 

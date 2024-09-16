@@ -8,7 +8,7 @@ import { Card } from "@nextui-org/card";
 const stats = [
   {
     label: "Students Impacted",
-    stat: 400,
+    stat: 100,
   },
   {
     label: "Yeard",

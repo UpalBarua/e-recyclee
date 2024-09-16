@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 const allManagement = [
   {
     id: 1,
@@ -48,15 +49,15 @@ const allManagement = [
 const AboutUs = () => {
   return (
     <section>
-      <div className="container mx-auto my-24 px-6">
+      <div className="container mx-auto my-14 px-6">
         <section className="mb-32 text-center lg:text-left">
           <div
-            className="relative overflow-hidden bg-cover bg-no-repeat"
+            className="relative overflow-hidden rounded-md bg-cover bg-no-repeat"
             style={{
               backgroundPosition: "50%",
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-              height: "500px",
+                "url('https://i.ibb.co.com/s9kKkC2/tr71823-ewaste-au.webp')",
+              height: "600px",
             }}
           ></div>
 
@@ -110,34 +111,34 @@ const AboutUs = () => {
               </div>
             </section>
           </div>
-          <div className="mt-24">
-            <div className="pb-8">
-              <h1 className="pb-2 text-3xl font-bold text-primary">
-                Meet Our Team
-              </h1>
-              <p>We makes us as a family who has lot of dedication.</p>
-            </div>
 
-            <div className="grid grid-cols-1 gap-14 lg:grid-cols-3">
-              {allManagement?.map((management) => (
-                <div key={management?.id}>
-                  <Image
-                    src={management?.image}
-                    alt=""
-                    width={370}
-                    height={420}
-                    className="rounded-md filter duration-300"
-                  />
-                  <div className="mt-2 w-80 rounded-md border-primary pb-4 pl-4 pt-4">
-                    <h2 className="text-[20px] font-bold">
-                      {management?.name}
-                    </h2>
-                    <h4>{management?.position}</h4>
-                  </div>
-                </div>
-              ))}
+          <section className="!col-[1/-1] grid grid-cols-1 items-center justify-items-center pt-8 lg:grid-cols-2">
+            <div className="flex flex-col items-center gap-y-6 px-6 py-10 text-center sm:px-10 lg:items-start lg:py-0 lg:text-start">
+              <div>
+                <h1 className="font-meidum text-pretty text-[clamp(2rem,_6.5vw+0.5rem,_3.5rem)] capitalize leading-tight tracking-tight">
+                  Meet MD Saifur Rahman The Founder Of E-Recylee
+                </h1>
+              </div>
+              <div>
+                <p className="max-w-[35rem] text-pretty text-lg leading-relaxed text-foreground-600">
+                  A brief intro to grab attention, stating who the founder is
+                  and their role. Md Saifur is the heart and soul behind
+                  e-recylee, bringing years of experience and passion for this
+                  platform.
+                </p>
+              </div>
+              <div></div>
             </div>
-          </div>
+            <div>
+              <Image
+                src="/images/founder.jpg"
+                alt="Hero Illustration"
+                height="600"
+                width="600"
+                className="h-full w-full rounded-md object-cover object-center lg:max-h-[90vh]"
+              />
+            </div>
+          </section>
         </section>
       </div>
       <div className="mx-auto max-w-7xl">
