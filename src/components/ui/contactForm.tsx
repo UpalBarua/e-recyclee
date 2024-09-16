@@ -21,11 +21,6 @@ const contactUsFormSchema = z.object({
     }),
   email: z.string().trim().email(),
   phone: z.string(),
-  donate: z.string(),
-  code: z.string(),
-  model: z.string(),
-  device: z.string(),
-  brand: z.string(),
   message: z
     .string()
     .trim()
@@ -35,7 +30,7 @@ const contactUsFormSchema = z.object({
 
 type TContactUsForm = z.infer<typeof contactUsFormSchema>;
 
-export function ContactUsForm() {
+export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const { control, handleSubmit, reset } = useForm<TContactUsForm>({
@@ -44,11 +39,6 @@ export function ContactUsForm() {
       name: "",
       email: "",
       phone: "",
-      donate: "",
-      code: "",
-      model: "",
-      device: "",
-      brand: "",
       message: "",
     },
   });
@@ -57,11 +47,7 @@ export function ContactUsForm() {
     name,
     email,
     phone,
-    donate,
-    code,
-    model,
-    device,
-    brand,
+
     message,
   }: TContactUsForm) => {
     try {
@@ -71,11 +57,7 @@ export function ContactUsForm() {
         name,
         email,
         phone,
-        donate,
-        code,
-        model,
-        device,
-        brand,
+
         message,
       };
       console.log(newMessage);
@@ -119,113 +101,14 @@ export function ContactUsForm() {
             />
           )}
         />
-        <div className="flex flex-col gap-2 lg:flex-row">
-          <Controller
-            name="email"
-            control={control}
-            render={({ field, fieldState }) => (
-              <Input
-                size="lg"
-                label="Email"
-                placeholder="Enter your email"
-                errorMessage={fieldState.error?.message || ""}
-                isInvalid={fieldState.invalid}
-                {...field}
-                classNames={{
-                  label: "text-base font-semibold",
-                  inputWrapper:
-                    "bg-content1/65 backdrop-saturate-200 backdrop-blur-xl border border-foreground/10 data-[hover=true]:bg-content1/75 group-data-[focus=true]:bg-content1/75",
-                }}
-              />
-            )}
-          />
-          <Controller
-            name="phone"
-            control={control}
-            render={({ field, fieldState }) => (
-              <Input
-                size="lg"
-                label="phone"
-                placeholder="Enter your phone no"
-                errorMessage={fieldState.error?.message || ""}
-                isInvalid={fieldState.invalid}
-                {...field}
-                classNames={{
-                  label: "text-base font-semibold",
-                  inputWrapper:
-                    "bg-content1/65 backdrop-saturate-200 backdrop-blur-xl border border-foreground/10 data-[hover=true]:bg-content1/75 group-data-[focus=true]:bg-content1/75",
-                }}
-              />
-            )}
-          />
-        </div>
         <Controller
-          name="donate"
+          name="email"
           control={control}
           render={({ field, fieldState }) => (
             <Input
               size="lg"
-              label="donate"
-              placeholder="Enter your donate amount"
-              errorMessage={fieldState.error?.message || ""}
-              isInvalid={fieldState.invalid}
-              {...field}
-              classNames={{
-                label: "text-base font-semibold",
-                inputWrapper:
-                  "bg-content1/65 backdrop-saturate-200 backdrop-blur-xl border border-foreground/10 data-[hover=true]:bg-content1/75 group-data-[focus=true]:bg-content1/75",
-              }}
-            />
-          )}
-        />
-        <div className="flex flex-col gap-2 lg:flex-row">
-          <Controller
-            name="code"
-            control={control}
-            render={({ field, fieldState }) => (
-              <Input
-                size="lg"
-                label="code"
-                placeholder="Enter your code no"
-                errorMessage={fieldState.error?.message || ""}
-                isInvalid={fieldState.invalid}
-                {...field}
-                classNames={{
-                  label: "text-base font-semibold",
-                  inputWrapper:
-                    "bg-content1/65 backdrop-saturate-200 backdrop-blur-xl border border-foreground/10 data-[hover=true]:bg-content1/75 group-data-[focus=true]:bg-content1/75",
-                }}
-              />
-            )}
-          />
-          <Controller
-            name="model"
-            control={control}
-            render={({ field, fieldState }) => (
-              <Input
-                size="lg"
-                label="model"
-                placeholder="Enter your model "
-                errorMessage={fieldState.error?.message || ""}
-                isInvalid={fieldState.invalid}
-                {...field}
-                classNames={{
-                  label: "text-base font-semibold",
-                  inputWrapper:
-                    "bg-content1/65 backdrop-saturate-200 backdrop-blur-xl border border-foreground/10 data-[hover=true]:bg-content1/75 group-data-[focus=true]:bg-content1/75",
-                }}
-              />
-            )}
-          />
-        </div>
-        <Controller
-          name="device"
-          control={control}
-          render={({ field, fieldState }) => (
-            <Input
-              size="lg"
-              label="device"
-              placeholder="Enter your device "
+              label="Email"
+              placeholder="Enter your email"
               errorMessage={fieldState.error?.message || ""}
               isInvalid={fieldState.invalid}
               {...field}
@@ -238,13 +121,13 @@ export function ContactUsForm() {
           )}
         />
         <Controller
-          name="brand"
+          name="phone"
           control={control}
           render={({ field, fieldState }) => (
             <Input
               size="lg"
-              label="brand"
-              placeholder="Enter your brand"
+              label="phone"
+              placeholder="Enter your phone no"
               errorMessage={fieldState.error?.message || ""}
               isInvalid={fieldState.invalid}
               {...field}
@@ -256,6 +139,7 @@ export function ContactUsForm() {
             />
           )}
         />
+
         <Controller
           name="message"
           control={control}
@@ -276,19 +160,7 @@ export function ContactUsForm() {
             />
           )}
         />
-        <div className="flex items-center justify-end gap-x-2 pt-2">
-          <Button
-            type="button"
-            variant="solid"
-            startContent={<X size={16} />}
-            onClick={() => {
-              reset();
-            }}
-            size="lg"
-            className="border border-foreground/10 bg-content1/65 backdrop-blur-xl backdrop-saturate-200 data-[hover=true]:bg-content1/75 group-data-[focus=true]:bg-content1/75"
-          >
-            <span>Clear</span>
-          </Button>
+        <div className="pt-2">
           <Button
             startContent={<Send size={16} />}
             type="submit"

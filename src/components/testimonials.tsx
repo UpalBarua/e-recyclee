@@ -14,7 +14,7 @@ const testimonials = [
   {
     id: "0",
     comment:
-      "Thrivenvision revolutionised my organisation! We were thrust into the limelight by their inventive branding tactics. They embody our success from logo design to social media campaigns; they are the secret ingredient.",
+      "E-recyclee made the donation process so seamless! I donated my old gadgets, and knowing they’re being reused for a greater purpose is amazing. Their team is incredibly supportive and committed to reducing e-waste!",
     starRating: 5,
     customer: {
       name: "Donald T Clark",
@@ -24,7 +24,7 @@ const testimonials = [
   {
     id: "1",
     comment:
-      "Working with thrivenvision changed everything. The inventiveness of their group is unbounded. Their attention to detail is unparalleled, and our website revamp was perfect.",
+      "Thanks to e-recyclee, my outdated tech is now making an impact. Their e-recycling initiative not only helped declutter my home but also supported sustainability efforts. A win for both me and the environment!",
     starRating: 5,
     customer: {
       name: "Daniel R Wagner",
@@ -34,7 +34,7 @@ const testimonials = [
   {
     id: "2",
     comment:
-      "Thrivenvision successfully materialised our vision. Their expertise in UX/UI and content strategy contributed to the app's user-friendliness and increased engagement. Strongly recommend them!",
+      "I’m beyond impressed with e-recyclee's mission. I donated my old devices, and the fact that they give them a new life by helping those in need is truly commendable. Highly recommend their services for e-waste management!",
     starRating: 5,
     customer: {
       name: "Cynthia M Hanlon",
@@ -44,7 +44,7 @@ const testimonials = [
   {
     id: "3",
     comment:
-      "The dedication of Thrivenvision is praiseworthy. As a result of the redesign of our e-commerce website, sales increased dramatically. Additionally, their consumer service is exceptional.",
+      "The way e-recyclee handles e-waste is phenomenal! I contributed my unused electronics, and it’s reassuring to know they are being repurposed for good causes. Their dedication to sustainability is evident!",
     starRating: 5,
     customer: {
       name: "David L.",
@@ -54,7 +54,7 @@ const testimonials = [
   {
     id: "4",
     comment:
-      "Indeed, thrivenvision's branding alchemy works! Customers are now attuned to our brand identity. Their group is innovative, prompt, and a delight to collaborate with.",
+      "I love how e-recyclee makes donating old electronics so easy. Their efforts to reduce e-waste while helping communities in need through donations is truly inspiring. I’m proud to be part of this initiative!",
     starRating: 5,
     customer: {
       name: "Chad E Cote",
@@ -64,7 +64,7 @@ const testimonials = [
   {
     id: "5",
     comment:
-      "With Thrivenvision's SEO knowledge, our ranks skyrocketed. Their keyword magic caused an explosion in our organic traffic. Strongly suggest it!",
+      "E-recyclee’s approach to recycling electronics is a game-changer. I donated my old gadgets, and their efforts to recycle and reuse them have significantly impacted both the environment and people’s lives. A remarkable service!",
     starRating: 5,
     customer: {
       name: "Evelyn L Vrabel",
@@ -74,7 +74,7 @@ const testimonials = [
   {
     id: "6",
     comment:
-      "What an incredible team Thrivenvision is! Their work on our website was revolutionary; it is now modern and easy to navigate. Their meticulousness is second to none.",
+      "The professionalism and dedication of e-recyclee are second to none. Donating my old tech felt like I was directly contributing to a better world. They make e-recycling simple and rewarding!",
     starRating: 5,
     customer: {
       name: "Joseph M Williams",
@@ -84,7 +84,7 @@ const testimonials = [
   {
     id: "7",
     comment:
-      "With Thrivenvision's help, our brand's visibility increased. We get a lot of clicks from their email marketing and blog articles. And they're really quick!",
+      "E-recyclee made donating so convenient! I no longer had to worry about e-waste; they turned my unused gadgets into resources for people in need. Their quick and efficient service was impressive.",
     starRating: 5,
     customer: {
       name: "Kristin S Reed",
@@ -94,7 +94,7 @@ const testimonials = [
   {
     id: "8",
     comment:
-      "The imagination of Thrivenvision is limitless. Their video production crew elevated our product introduction to the level of a Hollywood film. Forever indebted, we are!",
+      "E-recyclee's commitment to reducing e-waste is truly inspiring. Their team turned my old electronics into tools that are now helping others. Their creative solutions for e-recycling made the whole process enjoyable.",
     starRating: 5,
     customer: {
       name: "Ava G.",

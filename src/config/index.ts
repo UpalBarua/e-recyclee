@@ -21,13 +21,12 @@ export const navLinks = [
     href: "/blog",
   },
   {
-    label: "Contact Us",
+    label: "Contact",
     href: "/contact-us",
   },
-
   {
-    label: "Our Work",
-    href: "/our-work",
+    label: "Donate Device",
+    href: "/donation-device",
   },
 ] as const;
 
