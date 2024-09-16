@@ -1,5 +1,4 @@
 import { navLinks, socialLinks } from "@/config";
-import { services } from "@/config/services";
 import { Button } from "@nextui-org/button";
 import { Mail, MapPin, PhoneCall } from "lucide-react";
 import Image from "next/image";
@@ -11,7 +10,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 sm:grid-cols-2 lg:grid-cols-4">
         <div className="space-y-2">
           <Image
-            src="/images/logo.jpg"
+            src="/images/logo.png"
             alt="logo"
             height={80}
             width={120}

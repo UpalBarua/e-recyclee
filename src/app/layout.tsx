@@ -1,15 +1,23 @@
+import { Noto_Sans } from "next/font/google";
+import { ReactNode } from "react";
+
 import { Footer } from "@/components/footer";
 import { MainNav } from "@/components/navbar/main-nav";
 import { Providers } from "@/components/providers";
 import { cn } from "@/lib/cn";
-import { notoSans } from "./fonts";
+
 import "./globals.css";
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+const notoSans = Noto_Sans({
+  weight: ["400", "500", "700", "900"],
+  subsets: ["latin"],
+});
+
+type RootLayoutProps = {
+  children: ReactNode;
+};
+
+export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
     <html
       lang="en"
@@ -19,15 +27,13 @@ export default function RootLayout({
       <body
         className={cn(
           notoSans.className,
-          "relative min-h-screen overflow-x-hidden text-foreground/90 antialiased",
+          "relative min-h-screen overflow-x-hidden text-foreground antialiased",
         )}
       >
         <Providers>
-          <div className="relative flex min-h-screen flex-col">
-            <div className="flex-1">
-              <MainNav />
-              {children}
-            </div>
+          <div className="grid min-h-screen grid-rows-[auto,_1fr,_auto]">
+            <MainNav />
+            {children}
             <Footer />
             <div
               style={{

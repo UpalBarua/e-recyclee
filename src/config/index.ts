@@ -1,11 +1,15 @@
 import {
+  BarChart,
   Brain,
   Facebook,
+  Globe,
   Headset,
   Instagram,
   Lightbulb,
   Linkedin,
+  PenTool,
   Scale,
+  Trees,
   Trophy,
   Wrench,
 } from "lucide-react";
@@ -192,3 +196,45 @@ export const pricingPackages = [
     ],
   },
 ];
+
+export const ourFocus = [
+  {
+    title: "Humanity",
+    description:
+      "We believe in the power of technology to transform lives. By providing refurbished devices to underserved communities, we are empowering individuals to connect, learn, and grow.",
+    icon: Globe,
+  },
+  {
+    title: "Sustainability",
+    description:
+      "Protecting our planet is a top priority. We are committed to responsible e-waste management and reducing our environmental footprint. By recycling and repurposing electronics.",
+    icon: Trees,
+  },
+  {
+    title: "Repurposing",
+    description:
+      "We believe that every device has a second life. By refurbishing and repairing old electronics, we are extending their lifespan and reducing the need for new, resource-intensive products.",
+    icon: PenTool,
+  },
+  {
+    title: "Impact",
+    description:
+      "Our work has a measurable impact on communities and the environment. By providing affordable technology to those in need, we are empowering individuals to achieve their goals and improve their quality of life.",
+    icon: BarChart,
+  },
+] as const;
+
+export const stats = [
+  {
+    label: "Laptops Donated",
+    stat: 1000,
+  },
+  {
+    label: "Countries Impacted",
+    stat: 4,
+  },
+  {
+    label: "New Partners",
+    stat: 10,
+  },
+] as const;

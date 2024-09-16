@@ -1,7 +1,6 @@
 import { Button } from "@nextui-org/button";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
-import { MotionDiv } from "./motion-div";
 import Link from "next/link";
 
 export function Hero() {
@@ -70,6 +69,7 @@ export function Hero() {
           className="h-full w-full rounded-md object-cover object-center lg:max-h-[90vh]"
         />
       </MotionDiv>
+
     </section>
   );
 }

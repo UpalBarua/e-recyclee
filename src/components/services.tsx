@@ -1,14 +1,12 @@
-import { MotionDiv } from "./motion-div";
-import { ServiceTabs } from "./service-tabs";
-import { SectionHeading } from "./ui/section-heading";
-import { SectionSubheading } from "./ui/section-subheading";
-import Image from "next/image";
-import Link from "next/link";
-import { Card, CardHeader, CardBody } from "@nextui-org/card";
+import { Card, CardBody, CardHeader } from "@nextui-org/card";
 import { House, MonitorSmartphone } from "lucide-react";
+import Image from "next/image";
 
 export function Services() {
   return (
+
+
+
     <section
       id="services"
       className="scroll-mt-[5rem] rounded-xl bg-primary py-20"
@@ -48,6 +46,7 @@ export function Services() {
             </h1>
           </MotionDiv>
           <div className="flex items-center gap-x-4">
+
             <Card
               classNames={{
                 base: "group p-2 border bg-content1/65 backdrop-saturate-200 backdrop-blur-xl border-foreground/5 sm:p-4",
@@ -59,9 +58,7 @@ export function Services() {
                 </div>
               </CardHeader>
               <CardBody className="space-y-2">
-                <h3 className="font-meidum text-2xl tracking-tight">
-                  E-Waste Recycling
-                </h3>
+                <h3 className="font-meidum text-2xl">E-Waste Recycling</h3>
                 <p className="leading-relaxed text-foreground/60">
                   Recycling of old and defective equipment.
                 </p>
@@ -78,9 +75,13 @@ export function Services() {
                 </div>
               </CardHeader>
               <CardBody className="space-y-2">
+
+                <h3 className="font-meidum text-2xl">Upcycling gadgets</h3>
+
                 <h3 className="font-meidum text-2xl tracking-tight">
                   Reviving Gadgets
                 </h3>
+
                 <p className="leading-relaxed text-foreground/60">
                   We give your old electronics a new lease on life.
                 </p>

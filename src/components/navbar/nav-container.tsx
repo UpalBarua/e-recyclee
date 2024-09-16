@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ReactNode, useState } from "react";
 import { MobileNav } from "./mobile-nav";
-import { Button } from "@nextui-org/button";
 
 type NavContainerProps = {
   children: ReactNode;
@@ -27,7 +26,7 @@ export function NavContainer({ children }: Readonly<NavContainerProps>) {
     >
       <Link href="/" onClick={() => setIsMenuOpen(false)}>
         <Image
-          src="/images/logo.jpg"
+          src="/images/logo.png"
           alt="logo"
           height={60}
           width={120}
