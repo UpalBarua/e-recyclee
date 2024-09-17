@@ -1,9 +1,8 @@
-import { stats } from "@/config";
+// import { stats } from "@/config";
 import { Button } from "@nextui-org/button";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-
 
 const stats = [
   {
@@ -19,7 +18,6 @@ const stats = [
     stat: 2,
   },
 ] as const;
-
 
 export function AboutUs() {
   return (

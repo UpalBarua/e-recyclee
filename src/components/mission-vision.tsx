@@ -18,23 +18,6 @@ const missionAndVision = [
 
 export function MissionVision() {
   return (
-
-    <section className="grid grid-cols-1 grid-rows-2 gap-4 lg:grid-cols-[65ch,_1fr]">
-      {missionAndVision.map(({ title, description }) => (
-        <Card
-          classNames={{
-            base: "lg:col-[1/2] lg:row-[1/2] lg:even:row-[2/3] group p-3 border bg-content1/65 backdrop-saturate-200 backdrop-blur-xl border-foreground/5 sm:p-4",
-          }}
-        >
-          <CardHeader className="flex flex-col items-start pb-0">
-            <h3 className="font-meidum text-2xl">{title}</h3>
-          </CardHeader>
-          <CardBody>
-            <p className="text-relaxed text-foreground/60">{description}</p>
-          </CardBody>
-        </Card>
-      ))}
-
     <section className="grid grid-cols-[65ch,_1fr] grid-rows-2 gap-4">
       <Card
         classNames={{

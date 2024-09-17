@@ -1,12 +1,10 @@
 import { Card, CardBody, CardHeader } from "@nextui-org/card";
 import { House, MonitorSmartphone } from "lucide-react";
 import Image from "next/image";
+import { MotionDiv } from "./motion-div";
 
 export function Services() {
   return (
-
-
-
     <section
       id="services"
       className="scroll-mt-[5rem] rounded-xl bg-primary py-20"
@@ -46,7 +44,6 @@ export function Services() {
             </h1>
           </MotionDiv>
           <div className="flex items-center gap-x-4">
-
             <Card
               classNames={{
                 base: "group p-2 border bg-content1/65 backdrop-saturate-200 backdrop-blur-xl border-foreground/5 sm:p-4",
@@ -75,7 +72,6 @@ export function Services() {
                 </div>
               </CardHeader>
               <CardBody className="space-y-2">
-
                 <h3 className="font-meidum text-2xl">Upcycling gadgets</h3>
 
                 <h3 className="font-meidum text-2xl tracking-tight">
