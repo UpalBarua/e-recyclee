@@ -48,7 +48,7 @@ const allManagement = [
 
 const AboutUs = () => {
   return (
-    <section>
+    <section className="relative z-10">
       <div className="container mx-auto my-14 px-6">
         <section className="mb-32 text-center lg:text-left">
           <div
@@ -62,7 +62,7 @@ const AboutUs = () => {
           ></div>
 
           <div>
-            <section className="m-4 dark:bg-gray-100 dark:text-gray-800 md:m-8">
+            <section className="m-4 md:m-8 dark:bg-gray-100 dark:text-gray-800">
               <div className="container mx-auto my-6 space-y-1 p-4 text-center">
                 <h2 className="pb-3 text-3xl font-bold md:text-4xl">
                   The Transformative Impact of Generous Donations
@@ -74,7 +74,7 @@ const AboutUs = () => {
               </div>
               <div className="container mx-auto grid justify-center gap-4 lg:grid-cols-2 xl:grid-cols-3">
                 <div className="flex flex-col px-8 py-6">
-                  <h2 className="title-font mb-2 text-lg font-semibold dark:text-gray-800 sm:text-xl">
+                  <h2 className="title-font mb-2 text-lg font-semibold sm:text-xl dark:text-gray-800">
                     Relief
                   </h2>
                   <p className="mb-4 flex-1 text-base leading-relaxed dark:text-gray-600">
@@ -87,7 +87,7 @@ const AboutUs = () => {
                   ></a>
                 </div>
                 <div className="flex flex-col px-8 py-6 lg:border-none xl:border-solid">
-                  <h2 className="title-font mb-2 text-lg font-semibold dark:text-gray-800 sm:text-xl">
+                  <h2 className="title-font mb-2 text-lg font-semibold sm:text-xl dark:text-gray-800">
                     Sustainability
                   </h2>
                   <p className="mb-4 flex-1 text-base leading-relaxed dark:text-gray-600">
@@ -96,7 +96,7 @@ const AboutUs = () => {
                   </p>
                 </div>
                 <div className="flex flex-col px-8 py-6">
-                  <h2 className="title-font mb-2 text-lg font-semibold dark:text-gray-800 sm:text-xl">
+                  <h2 className="title-font mb-2 text-lg font-semibold sm:text-xl dark:text-gray-800">
                     Unity
                   </h2>
                   <p className="mb-4 flex-1 text-base leading-relaxed dark:text-gray-600">

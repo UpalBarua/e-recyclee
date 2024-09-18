@@ -66,7 +66,7 @@ const Blog = () => {
   ];
 
   return (
-    <section className="mx-auto max-w-7xl">
+    <section className="relative z-10 mx-auto max-w-7xl">
       <h1 className="pb-6 pt-8 text-2xl font-bold">Read Your Blog :</h1>
 
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
