@@ -1,5 +1,3 @@
-import React from "react";
-import { Input, Textarea } from "@nextui-org/input";
 import { ContactForm } from "@/components/ui/contactForm";
 
 const ContactUs = () => {
