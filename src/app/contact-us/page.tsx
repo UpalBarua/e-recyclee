@@ -1,10 +1,8 @@
-import React from "react";
-import { Input, Textarea } from "@nextui-org/input";
 import { ContactForm } from "@/components/ui/contactForm";
 
 const ContactUs = () => {
   return (
-    <section className="mt-6">
+    <section className="relative z-10 mt-6">
       <div className="py-6 dark:bg-gray-100">
         <div className="mx-auto grid max-w-6xl grid-cols-1 px-6 md:grid-cols-2 md:divide-x lg:px-8">
           <div className="py-6 md:px-6 md:py-0">
