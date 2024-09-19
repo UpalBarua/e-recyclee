@@ -19,7 +19,7 @@ export default function HomePage() {
       <TrustedCompanies />
       <Impact />
       <Testimonials />
-      <Blog />
+      {/* <Blog /> */}
     </main>
   );
 }
