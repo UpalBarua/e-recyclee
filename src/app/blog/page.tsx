@@ -114,19 +114,11 @@ const Blog = () => {
   ];
 
   return (
-
     <section className="relative z-[10] mx-auto max-w-6xl p-4">
       <h1 className="pb-6 pt-14 text-center text-2xl font-bold">
-
-
-   
-    <section className="relative z-[10] mx-auto max-w-6xl p-4">
-      <h1 className="pb-6 pt-14 text-center text-2xl font-bold">
-
         Addressing the E-Waste Crisis in the USA: Environmental Impacts,
         Recycling Processes, and Future Innovations
       </h1>
-
 
       {/* <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
 
