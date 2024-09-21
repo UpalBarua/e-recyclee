@@ -21,3 +21,19 @@
     /* border: 1px solid lime; */
   }
 }
+
+@layer utilities {
+  .wrapper {
+    --max-width: 75rem;
+    --padding-inline: 1rem;
+
+    display: grid;
+    grid-template-columns:
+      minmax(var(--padding-inline), 1fr) min(var(--max-width),
+        100% - (var(--padding-inline) * 2)) minmax(var(--padding-inline), 1fr);
+
+    >* {
+      grid-column: 2/3;
+    }
+  }
+}

@@ -1,16 +1,12 @@
 import { Card } from "@nextui-org/card";
 import { Calendar } from "lucide-react";
 import Image from "next/image";
+import { SectionHeading } from "./ui/section-heading";
 
 export function Blog() {
   return (
     <section className="space-y-6">
-      <span className="rounded-full border border-foreground/10 bg-content1/65 px-4 py-2 text-sm font-medium uppercase tracking-wider backdrop-blur-xl backdrop-saturate-200 sm:text-base">
-        Blog 📃
-      </span>
-      <h1 className="font-meidum text-pretty pb-10 text-[clamp(2rem,_6.5vw+0.5rem,_3.5rem)] capitalize leading-tight tracking-tight">
-        Latest Blog & News
-      </h1>
+      <SectionHeading>Latest Blog & News</SectionHeading>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         {Array(3)
           .fill("")
