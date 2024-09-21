@@ -18,7 +18,7 @@ export default function HomePage() {
       <MissionVision />
       <TrustedCompanies />
       <Impact />
-      <Testimonials />
+      {/* <Testimonials /> */}
       {/* <Blog /> */}
     </main>
   );
