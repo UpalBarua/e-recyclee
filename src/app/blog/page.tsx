@@ -217,8 +217,20 @@ const Blog = () => {
               informal recycling sites (EPA, 2021).
             </p>
           </div>
+          <div className="mt-6">
+            <Image
+              className="mt-8 h-[46rem] w-full rounded-3xl object-cover object-center"
+              src="https://i.ibb.co/MPvKYrX/Whats-App-Image-2024-09-15-at-19-43-18-55a279c4.jpg
+
+"
+              alt={"blog image"}
+              height={400}
+              width={450}
+            />
+          </div>
+
           {/* second div */}
-          <div>
+          <div className="mt-4">
             <p className="text-[18px]">
               <span className="font-semibold">Greenhouse Gas Emissions:</span>
               The production and disposal of electronics contribute
@@ -269,6 +281,19 @@ const Blog = () => {
               material recovery and minimize hazardous waste (R2 Certification
               Program, 2020).
             </p>
+          </div>
+          <div className="mt-6">
+            <Image
+              className="mt-8 h-[46rem] w-full rounded-3xl object-cover object-center"
+              src="https://i.ibb.co/09zcLTD/Whats-App-Image-2024-09-15-at-19-43-00-5030866e.jpg
+
+
+
+"
+              alt={"blog image"}
+              height={400}
+              width={450}
+            />
           </div>
         </div>
         {/* four section */}
@@ -325,6 +350,17 @@ const Blog = () => {
               illegal shipments to developing nations (Basel Action Network,
               2020).
             </p>
+          </div>
+          <div className="mt-6">
+            <Image
+              className="mt-8 h-[46rem] w-full rounded-3xl object-cover object-center"
+              src="https://i.ibb.co/Q9Mq4Bf/Whats-App-Image-2024-09-15-at-19-43-29-cbae61ab.jpg
+
+"
+              alt={"blog image"}
+              height={400}
+              width={450}
+            />
           </div>
         </div>
         {/* six section */}
